@@ -1,0 +1,149 @@
+body {
+    background-color: rgb(255, 251, 189);
+}
+
+.row {
+    position: relative;
+}
+
+.logo {
+    font-family: 'Monoton', cursive;
+    font-size: 40px;
+    position: relative;
+    display: inline;
+}
+#crystal {
+    color: rgb(53, 157, 199);
+    position: relative;
+}
+
+#collector {
+    color: rgb(233, 69, 48);
+    position: relative;
+    top: -24px;
+    left: 64px;
+}
+
+#v1 {
+    color: rgb(233, 69, 48);
+    display: inline;
+    position: relative;
+    top: -24px;
+    left: 72px;
+    font-size: 25px;
+}
+
+.instructions {
+    display: inline;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    padding-top: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    margin: 15px;
+    border-radius: 15px;
+}
+
+#instructions {
+    font-family: 'Bungee', cursive;
+    text-decoration: underline;
+}
+
+#steps {
+    font-family: 'Roboto', sans-serif;
+}
+
+.numbers {
+    font-family: 'Bungee', cursive;
+}
+
+.win {
+    font-family: 'Bungee', cursive;
+    color: rgb(56, 161, 56);
+}
+
+.lose {
+    font-family: 'Bungee', cursive;
+    color: rgb(233, 69, 48);
+}
+
+.random-number {
+    font-family: 'Bungee', cursive;
+    font-size: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 45px;
+    border-radius: 50%;
+    position: relative;
+    left: 23px;
+    top: 30px;
+}
+
+.score {
+    font-family: 'Bungee', cursive;
+    font-size: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 45px;
+    border-radius: 50%;
+    position: relative;
+    left: 60px;
+    top: 30px;
+}
+
+.crystal {
+    width: 20px;
+    display: inline;
+    position: relative;
+}
+
+.crystals {
+    position: relative;
+    left: 20px;
+    top: 55px;
+}
+
+.crystal-size {
+    width: 150px;
+    padding: 30px;
+    position: relative;
+}
+
+.title-score {
+    font-family: 'Bungee', cursive;
+    position: relative;
+    left: 78px;
+}
+
+.title-number {
+    font-family: 'Bungee', cursive;
+    position: relative;
+    left: 40px;
+}
+
+.crystal-animation img {
+    transition: .5s;
+
+}
+
+.crystal-animation-active img {
+    
+    transform: rotate(360deg);
+}
+
+.crystal-animation:hover img {
+    
+    transform: scale(1.2);
+}
+
+.wins {
+    font-family: 'Bungee', cursive;
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    position: relative;
+    left: 147px;
+    top: 100px;
+    height: 64px;
+    padding: 10px;
+    padding-right: 20px;
+}
