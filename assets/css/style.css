@@ -1,3 +1,5 @@
+/* Leve One */
+
 body {
     background-color: rgb(255, 251, 189);
 }
@@ -35,7 +37,7 @@ body {
 
 .instructions {
     display: inline;
-    position: fixed;
+    position: absolute;
     top: 0px;
     right: 0px;
     padding-top: 10px;
@@ -146,4 +148,26 @@ body {
     height: 64px;
     padding: 10px;
     padding-right: 20px;
+}
+
+
+/* Level Two */
+.body-level-two {
+    background-color: rgb(116, 116, 116);
+}
+
+
+/* Level Three */
+.body-level-three {
+    background-color: rgb(60, 121, 156);
+}
+
+/* Level Four */
+.body-level-four {
+    background-color: rgb(252, 174, 111);
+}
+
+/* Level Five */
+.body-level-five {
+    background-color: rgb(128, 54, 54);
 }

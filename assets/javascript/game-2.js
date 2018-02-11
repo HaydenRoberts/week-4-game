@@ -46,9 +46,39 @@ function reset() {
 
    
 }
-function levelTwo () {
-    $('body').toggleClass('body-level-two');
-    console.log('level two');
+function checkWins () {
+    if(wins > 4 && wins < 10){
+        $('body').addClass('body-level-two');
+        crystalOne = crystalNum(1, 12);
+        $(".crystal-1").html( "<img src='assets/images/c1_lv2.png' class='crystal-size'>" );
+        console.log(crystalOne);
+    } else if (wins > 9 && wins < 15) {
+        $('body').addClass('body-level-three');
+        crystalOne = crystalNum(1, 12);
+        $(".crystal-2").html( "<img src='assets/images/c2_lv3.png' class='crystal-size crystal-animation'>" );
+        console.log(crystalOne);
+        console.log('Crystal 1: ' + crystalOne);
+        crystalTwo = crystalNum(1, 12);
+        console.log('Crystal 2: ' + crystalTwo);
+    } else if (wins > 14 && wins < 20) {
+        $('body').addClass('body-level-four');
+        crystalOne = crystalNum(1, 12);
+        $(".crystal-3").html( "<img src='assets/images/c3_lv4.png' class='crystal-size crystal-animation'>" );
+        crystalTwo = crystalNum(1, 12);
+        crystalThree = crystalNum(1, 12);
+    } else if (wins > 19){
+        $('body').addClass('body-level-five');
+        crystalOne = crystalNum(1, 12);
+        $(".crystal-4").html( "<img src='assets/images/c4_lv5.png' class='crystal-size crystal-animation'>" );
+        crystalTwo = crystalNum(1, 12);
+        crystalThree = crystalNum(1, 12);
+        crystalFour = crystalNum(1, 12);
+
+        console.log('Crystal 1: ' + crystalOne);
+        console.log('Crystal 2: ' + crystalTwo);
+        console.log('Crystal 3: ' + crystalThree);
+        console.log('Crystal 4: ' + crystalFour);
+    }
 }
 
 
@@ -61,11 +91,7 @@ $(".crystal-one").on("click", function () {
         // Add a win and reset
         wins++;
         $('.add-win').text(wins);
-        if (wins = 1) {
-            levelTwo();
-        } else {
-
-        }
+        checkWins(wins);
         reset();
     } else if (score > randomNumber) {
         // Add a loss and reset
@@ -73,6 +99,7 @@ $(".crystal-one").on("click", function () {
         $('.add-loss').text(losses);
         reset();
     } else {
+        checkWins(wins);
     }
 })
 
@@ -84,11 +111,7 @@ $(".crystal-two").on("click", function () {
         // Add a win and reset
         wins++;
         $('.add-win').text(wins);
-        if (wins > 0) {
-            levelTwo();
-        } else {
-
-        }
+        checkWins(wins);
         reset();
     } else if (score > randomNumber) {
         // Add a loss and reset
@@ -96,6 +119,7 @@ $(".crystal-two").on("click", function () {
         $('.add-loss').text(losses);
         reset();
     } else {
+        checkWins(wins);
     }
 })
 
@@ -107,11 +131,7 @@ $(".crystal-three").on("click", function () {
         // Add a win and reset
         wins++;
         $('.add-win').text(wins);
-        if (wins > 0) {
-            levelTwo();
-        } else {
-
-        }
+        checkWins(wins);
         reset();
     } else if (score > randomNumber) {
         // Add a loss and reset
@@ -119,6 +139,7 @@ $(".crystal-three").on("click", function () {
         $('.add-loss').text(losses);
         reset();
     } else {
+        checkWins(wins);
     }
 })
 
@@ -130,11 +151,7 @@ $(".crystal-four").on("click", function () {
         // Add a win and reset
         wins++;
         $('.add-win').text(wins);
-        if (wins > 0) {
-            levelTwo();
-        } else {
-
-        }
+        checkWins(wins);
         reset();
     } else if (score > randomNumber) {
         // Add a loss and reset
@@ -142,5 +159,6 @@ $(".crystal-four").on("click", function () {
         $('.add-loss').text(losses);
         reset();
     } else {
+        checkWins(wins);
     }
 })
