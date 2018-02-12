@@ -171,3 +171,8 @@ body {
 .body-level-five {
     background-color: rgb(128, 54, 54);
 }
+
+/* Body Reset */
+.body-reset {
+    background-color: rgb(255, 251, 189);
+}
