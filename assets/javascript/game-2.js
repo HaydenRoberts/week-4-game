@@ -56,6 +56,9 @@ function resetTwo() {
     losses = 0;
     $('body').removeClass('body-level-two body-level-three body-level-four body-level-five');
     $('body').addClass('body-reset');
+    $('.btn').addClass('hidden');
+    $('.middle-class').removeClass('victory');
+    $('.victory-message').empty();
     $('.score').text(score);
     $('.random-number').text(randomNumber);
     $('.add-loss').text(losses);
@@ -108,6 +111,16 @@ function checkWins() {
         console.log('Crystal 2: ' + crystalTwo);
         console.log('Crystal 3: ' + crystalThree);
         console.log('Crystal 4: ' + crystalFour);
+    } else if (wins == 21) {
+        $('.hidden').removeClass('hidden');
+        $('.victory-message').text('You Win!!');
+        $('.middle-class').addClass('victory');
+        $('.btn').text('Play Again?');
+        $('button').on('click',function(){
+            resetTwo();
+        })
+    } else {
+        
     }
 }
 

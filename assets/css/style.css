@@ -176,3 +176,29 @@ body {
 .body-reset {
     background-color: rgb(255, 251, 189);
 }
+
+/* Victory Box */
+.victory {
+    background-color: rgba(167, 165, 165, 0.9);
+    padding: 75px 300px;
+    position: relative;
+    top: -166px;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+.victory-message {
+    font-family: 'Bungee', cursive;
+    font-size: 60px;
+    color: white;
+}
+
+.button-style {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+}
