@@ -111,7 +111,7 @@ function checkWins() {
         console.log('Crystal 2: ' + crystalTwo);
         console.log('Crystal 3: ' + crystalThree);
         console.log('Crystal 4: ' + crystalFour);
-    } else if (wins == 21) {
+    } else if (wins > 20) {
         $('.hidden').removeClass('hidden');
         $('.victory-message').text('You Win!!');
         $('.middle-class').addClass('victory');
